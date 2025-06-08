@@ -34,7 +34,16 @@ ls -a
 cat .filehidden
 ```
 ## LEVEL 4 - 5
-**Goal:** pwd is in the human readable file   
+**Goal:** open the human-readable file among many nr
+**Command:**  
+```bash
+file ./* 
+```
+## LEVEL 5 - 6
+**Goal:** open the file with
+human-readable
+1033 bytes in size
+not executable
 **Command:**  
 ```bash
 file ./* 
