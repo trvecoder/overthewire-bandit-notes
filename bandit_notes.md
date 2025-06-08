@@ -33,3 +33,9 @@ ls -a
 ```bash
 cat .filehidden
 ```
+## LEVEL 4 - 5
+**Goal:** pwd is in the human readable file   
+**Command:**  
+```bash
+file ./* 
+```
