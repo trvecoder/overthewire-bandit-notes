@@ -48,3 +48,14 @@ not executable
 ```bash
 find . -type f -size 1033c ! -executable -readable
 ```
+## LEVEL 6 - 7
+**Goal:** open the file with the properties:
+human-readable
+1033 bytes in size
+not executable
+**Command:**  
+```bash
+bandit6@bandit:/$ find . -type f -user bandit7 -group bandit6 -size 33c
+2>/dev/null
+```
+2>/dev/null --> throws 'permission denied' files into a blackhole
