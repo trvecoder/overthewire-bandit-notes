@@ -77,11 +77,11 @@ A summary of practical Linux and security concepts I picked up by playing [OverT
 
 ---
 
-## ✅ Final Outcome
-> I now have strong fundamentals in Linux, scripting, file systems, permissions, and networking basics. These skills support future work in **Cloud**, **DevOps**, **Security**, or **Backend Engineering** roles.
+## Final Outcome
+> I now have strong fundamentals in Linux, scripting, file systems, permissions, and networking basics. These skills support future work in **Cloud**, **DevOps**, or **Security** roles.
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 - Explore new wargames like **Narnia**, **Leviathan**, or **Overpass**
 - Apply terminal skills to real-world cloud and scripting projects
