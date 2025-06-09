@@ -8,7 +8,7 @@ Bandit is a wargame that helps beginners learn Linux commands and terminal skill
 
 Notes are in [`bandit_notes.md`](./bandit_notes.md)
 
-# What I Learned from Bandit Wargame (Levels 0–34)
+## What did I learn?
 
 A summary of practical Linux and security concepts I picked up by playing [OverTheWire: Bandit](https://overthewire.org/wargames/bandit/).
 
@@ -71,17 +71,12 @@ A summary of practical Linux and security concepts I picked up by playing [OverT
 ---
 
 ## Soft Skills
-- Learned how to learn — reading errors, researching, and iterating
+- Reading errors, researching, and iterating
 - Practiced critical thinking, patience, and persistence
 - Built foundational confidence in working on the Linux terminal
 
 ---
 
 ## Final Outcome
-> I now have strong fundamentals in Linux, scripting, file systems, permissions, and networking basics. These skills support future work in **Cloud**, **DevOps**, or **Security** roles.
+> I now have strong fundamentals in Linux, scripting, file systems, permissions, and networking basics. These skills support future work in Cloud, DevOps, or Security roles.
 
----
-
-## Next Steps
-- Explore new wargames like **Narnia**, **Leviathan**, or **Overpass**
-- Apply terminal skills to real-world cloud and scripting projects
