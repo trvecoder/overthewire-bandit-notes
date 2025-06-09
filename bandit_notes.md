@@ -81,3 +81,41 @@ bandit6@bandit:/$ find . -type f -user bandit7 -group bandit6 -size 33c
 ```bash
 bandit7@bandit:~$ grep millionth data.txt
 ```
+## LEVEL 8 - 9
+**Goal:** The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+
+**Command:**  
+```bash
+bandit8@bandit:~$ sort data.txt | uniq -u
+```
+Count Duplicates
+- ```uniq -c file.txt```  
+  Prefixes each line with the number of occurrences.
+
+Show Only Repeated Lines
+- ```uniq -d file.txt```  
+  Displays only duplicate lines, showing each duplicate once.
+
+Show Only Unique Lines
+- ```uniq -u file.txt```
+  Displays lines that are not repeated.
+
+Ignore Case
+- ```uniq -i file.txt```
+  Treats lines as equal regardless of case.
+
+Skip Fields
+- ```uniq --skip-fields=1 file.txt```  
+  Ignores the first field (space-separated) when comparing lines.
+
+Skip Characters
+- ```uniq --skip-chars=3 file.txt```  
+  Ignores the first 3 characters of each line when comparing.
+
+## LEVEL 9 - 10
+**Goal:** The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+
+**Command:**  
+```bash
+bandit9@bandit:~$ strings data.txt | grep '==='
+```
