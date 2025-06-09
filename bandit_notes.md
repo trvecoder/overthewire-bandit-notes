@@ -1,3 +1,15 @@
+# OverTheWire: Bandit Notes
+
+This repo contains my notes as I solve the OverTheWire Bandit wargame, a CTF challenge designed to teach Linux fundamentals, terminal commands, file permissions, and basic networking.
+
+🔗 [Bandit wargame link](https://overthewire.org/wargames/bandit/)
+
+## Tools & Concepts Covered
+- Linux shell commands (`ls`, `cd`, `cat`, `find`, etc.)
+- File permissions and ownership
+- Data encoding/decoding
+- Network basics using `ssh` and `nc`
+
 ## LEVEL 0 - 1
 **Goal:** SSH into the server  
 **Command:**  
