@@ -37,14 +37,14 @@ cat .filehidden
 **Goal:** open the human-readable file among many nr
 **Command:**  
 ```bash
-file ./* 
+find . -type f -readable
 ```
 ## LEVEL 5 - 6
-**Goal:** open the file with
+**Goal:** open the file with the properties:
 human-readable
 1033 bytes in size
 not executable
 **Command:**  
 ```bash
-file ./* 
+find . -type f -size 1033c ! -executable -readable
 ```
