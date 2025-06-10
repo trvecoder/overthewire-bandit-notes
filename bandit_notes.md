@@ -115,7 +115,7 @@ Skip Characters
 ## LEVEL 9 - 10
 **Goal:** The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
 
-**Command:**  33
+**Command:**  
 ```bash
 bandit9@bandit:~$ strings data.txt | grep '==='
 ```
