@@ -119,3 +119,19 @@ Skip Characters
 ```bash
 bandit9@bandit:~$ strings data.txt | grep '==='
 ```
+
+## LEVEL 10 - 11
+**Goal:** The password for the next level is stored in the file data.txt, which contains base64 encoded data
+
+**Command:**  
+```bash
+bandit10@bandit:~$ base64 -d data.txt
+```
+
+## LEVEL 11 - 12
+**Goal:** The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+
+**Command:**  
+```bash
+bandit11@bandit:~$ cat data.txt|tr 'A-Za-z' 'N-ZA-Mn-za-m'
+```
