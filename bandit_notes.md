@@ -135,3 +135,56 @@ bandit10@bandit:~$ base64 -d data.txt
 ```bash
 bandit11@bandit:~$ cat data.txt|tr 'A-Za-z' 'N-ZA-Mn-za-m'
 ```
+
+## LEVEL 12 - 13
+**Goal:** The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work. Use mkdir with a hard to guess directory name. Or better, use the command “mktemp -d”. Then copy the datafile using cp, and rename it using mv (read the manpages!)
+
+**Command:**  
+```bash
+# 1. Identify file type
+file copy.txt
+
+# 2. Rename gzip file and decompress
+mv copy.txt copy.gz
+gzip -d copy.gz
+
+# 3. Check resulting file type and extract hex dump
+file copy
+xxd -r copy > copy.bin
+file copy.bin
+
+# 4. Rename and decompress bzip2 file
+mv copy.bin copy.bz2
+bzip2 -d copy.bz2
+
+# 5. Check resulting file type and decompress gzip again
+file copy
+mv copy copy.gz
+gzip -d copy.gz
+
+# 6. Check for tar archive and extract
+file copy
+mv copy copy.tar
+tar -xf copy.tar
+
+# 7. Check and process the next file in the chain
+file data5.bin
+mv data5.bin data5.tar
+tar -xf data5.tar
+
+file data6.bin
+mv data6.bin data6.bz2
+bzip2 -d data6.bz2
+
+file data6
+mv data6 data6.tar
+tar -xf data6.tar
+
+file data8.bin
+mv data8.bin data8.gz
+gzip -d data8.gz
+
+# 8. Final step – password revealed
+file data8
+cat data8
+```
